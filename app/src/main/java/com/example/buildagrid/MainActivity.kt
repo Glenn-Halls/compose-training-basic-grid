@@ -29,8 +29,8 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
-    Card(elevation = 4.dp,) {
+fun TopicCard(topic: Topic) {
+    Card(elevation = 4.dp) {
         Row {
             Image(
                 painter = painterResource(topic.imageResourceId),
@@ -59,6 +59,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                     )
                     Text(
                         text = topic.numberResourceId.toString(),
+                        style = MaterialTheme.typography.caption,
                         modifier = Modifier
                             .align(Alignment.CenterVertically)
                     )
