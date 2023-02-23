@@ -58,7 +58,9 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                             .align(Alignment.CenterVertically)
                     )
                     Text(
-                        text = topic.numberResourceId.toString()
+                        text = topic.numberResourceId.toString(),
+                        modifier = Modifier
+                            .align(Alignment.CenterVertically)
                     )
                 }
             }
